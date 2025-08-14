@@ -1,5 +1,5 @@
 import React from "react";
-import profilePic from "../assets/IMG_5612.jpg"; // change filename if needed
+import profilePic from "../assets/IMG_9750.jpg"; // change filename if needed
 
 export default function Info() {
   return (
@@ -19,3 +19,4 @@ export default function Info() {
     </div>
   );
 }
+
