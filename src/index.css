@@ -10,18 +10,19 @@ body {
   min-height: 100vh;
   padding: 20px;
   margin: 0;
+  box-sizing: border-box;
 }
 
 .card {
   background-color: #23252c;
   color: white;
-  width: 350px; /* wider */
-  max-width: 90%;
+  max-width: 350px; /* ✅ No fixed width — responsive */
+  width: 100%;      /* ✅ Fills available space without overflow */
   border-radius: 10px;
   overflow: hidden;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-  margin-top: -10px;
+  margin: 0 auto;   /* ✅ Ensures it's always centered horizontally */
 }
 
 .profile-pic {
@@ -46,21 +47,20 @@ body {
   align-items: center;
   gap: 10px;
   width: 75%;
-  margin: auto;      /* Take full width of the parent */
+  margin: auto;
   padding: 9px 0;
   border-radius: 6px;
-  }
-
+}
 
 .email-btn, .linkedin-btn {
-  flex: 1; /* makes them equal width */
-  min-width: 0; /* allows shrinking */
+  flex: 1;
+  min-width: 0;
   padding: 8px 12px;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
   text-align: center;
-  white-space: nowrap; /* prevents text wrap */
+  white-space: nowrap;
 }
 
 .email-btn {
@@ -94,11 +94,10 @@ body {
 /* 📱 Mobile adjustments */
 @media (max-width: 480px) {
   .card {
-    width: 100%;
-    margin: 0 10px;
+    margin: 0 auto;  /* ✅ Ensures perfect centering on mobile */
+    padding: 0;      /* Removes unnecessary space around card */
   }
 
-  /* Keep buttons side by side but shrink evenly */
   .buttons {
     flex-direction: row;
     flex-wrap: nowrap;
