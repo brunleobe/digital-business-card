@@ -16,13 +16,13 @@ body {
 .card {
   background-color: #23252c;
   color: white;
-  max-width: 350px; /* ✅ No fixed width — responsive */
-  width: 100%;      /* ✅ Fills available space without overflow */
+  max-width: 350px;
+  width: 100%;
   border-radius: 10px;
   overflow: hidden;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-  margin: 0 auto;   /* ✅ Ensures it's always centered horizontally */
+  margin: 0 auto;
 }
 
 .profile-pic {
@@ -91,11 +91,10 @@ body {
   font-size: 1.2rem;
 }
 
-/* 📱 Mobile adjustments */
 @media (max-width: 480px) {
   .card {
-    margin: 0 auto;  /* ✅ Ensures perfect centering on mobile */
-    padding: 0;      /* Removes unnecessary space around card */
+    margin: 0 auto;
+    padding: 0;
   }
 
   .buttons {
