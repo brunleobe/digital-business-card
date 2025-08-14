@@ -10,13 +10,8 @@ export default function Info() {
       
       <div className="buttons">
         <a href="mailto:brightobende11@gmail.com" className="email-btn" target="_blank" rel="noopener noreferrer">
-          <i className="fas fa-envelope"></i> Email
-        </a>
-        <a href="https://www.linkedin.com/in/bright-obende-420394302/" className="linkedin-btn" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-linkedin"></i> LinkedIn
-        </a>
+          <i className="fas fa-envelope"></i> Email</a>
       </div>
     </div>
   );
 }
-
